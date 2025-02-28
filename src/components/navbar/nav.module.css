@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.username {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .auth {
+    margin-top: 10px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}

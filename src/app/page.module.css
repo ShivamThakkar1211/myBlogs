@@ -166,3 +166,76 @@ a.secondary {
     filter: invert();
   }
 }
+
+
+/* page.module.css */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.messagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+.loading,
+.noMessages {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.messagesList {
+  list-style: none;
+  padding: 0;
+}
+
+.messagesList>.message {
+  margin-bottom: 2vh;
+}
+.message {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #007bff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.message:hover {
+  transform: translateY(-2px);
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.message p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+:global(small) {
+  font-size: 14px;
+  color: #777;
+}
