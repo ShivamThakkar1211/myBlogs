@@ -37,7 +37,7 @@ export default function BlogMessages() {
               <li key={index} className={styles.message}>
                 <h3 className={styles.username}>✍️ {msg.username}</h3> {/* Show username */}
                 <p>{msg.content}</p>
-                <small>{new Date(msg.createdAt).toLocaleString()}</small>
+                <small className={styles.small}>{new Date(msg.createdAt).toLocaleString()}</small>
               </li>
             ))}
           </ul>

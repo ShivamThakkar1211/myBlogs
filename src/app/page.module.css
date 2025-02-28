@@ -235,7 +235,7 @@ a.secondary {
   margin-bottom: 8px;
 }
 
-:global(small) {
+.small {
   font-size: 14px;
   color: #777;
 }
